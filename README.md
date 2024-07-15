@@ -22,3 +22,14 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+run this for prod:
+
+rails s -b 0.0.0.0
+
+TODO:
+
+* add postgres container instead of sqlite3
+* add specs
+* figure out what the frick the site is supposed to be
