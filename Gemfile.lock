@@ -128,6 +128,8 @@ GEM
       racc (~> 1.4)
     psych (5.1.2)
       stringio
+    puma (6.4.2)
+      nio4r (~> 2.0)
     racc (1.8.0)
     rack (3.1.7)
     rack-session (2.0.0)
@@ -196,6 +198,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (~> 1.18)
   byebug (~> 11.1)
+  puma (~> 6.4)
   rails (~> 7.1)
   sqlite3 (~> 1.4)
   tzinfo-data (~> 1.2024)
