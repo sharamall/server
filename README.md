@@ -1,8 +1,14 @@
 uwu
 
+useful commands:
+* rake db:drop:_unsafe db:setup RAILS_ENV=test
+* Get-Process -Id (Get-NetTCPConnection -LocalPort 3000).OwningProcess 
+* taskkill /F /PID 6280
+* find . -type f -exec dos2unix {} \;
+
 run this for prod:
 
-nohup rails s -b 'ssl://0.0.0.0:3000?key=/home/sharamall/certs/privkey.pem&cert=/home/sharamall/certs/fullchain.pem' -u puma &
+RAILS_ENV=production nohup rails s -b 'ssl://0.0.0.0:3000?key=/home/sharamall/certs/privkey.pem&cert=/home/sharamall/certs/fullchain.pem' -u puma &
 
 TODO:
 
@@ -21,4 +27,5 @@ installation:
 * try adding those to $PATH if it doesn't work or cd to C:/Tools when running gem install
 
 ubuntu:
-* make sure libssl-dev is installed before installing puma or it won't support TLS
+* make sure libssl-dev is installed before installing puma or it won't support TLS.
+* if puma is already installed, then `gem uninstall puma` `sudo apt install libssl-dev -yq` `bundle install`

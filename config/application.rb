@@ -1,4 +1,5 @@
 require_relative "boot"
+require_relative "../app/middleware/visit_tracker"
 
 require "rails/all"
 
@@ -17,6 +18,7 @@ module Sharamall
     config.autoload_lib(ignore: %w(assets tasks))
     config.hosts << "pi"
     config.hosts << "sharamall.com"
+    config.middleware.use ::VisitTracker
 
     # Configuration for the application, engines, and railties goes here.
     #
