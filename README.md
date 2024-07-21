@@ -8,7 +8,7 @@ useful commands:
 
 run this for prod:
 
-RAILS_ENV=production nohup rails s -b 'ssl://0.0.0.0:3000?key=/home/sharamall/certs/privkey.pem&cert=/home/sharamall/certs/fullchain.pem' -u puma &
+RAILS_ENV=production nohup rails s -b 'ssl://0.0.0.0:3000?key=/home/sharamall/certs/privkey.pem&cert=/home/sharamall/certs/fullchain.pem' -u puma 2>&1 &
 
 TODO:
 
