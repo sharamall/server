@@ -5,6 +5,7 @@ useful commands:
 * Get-Process -Id (Get-NetTCPConnection -LocalPort 3000).OwningProcess 
 * taskkill /F /PID 6280
 * find . -type f -exec dos2unix {} \;
+* RAILS_ENV=production rake db:migrate
 
 run this for prod:
 
