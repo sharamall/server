@@ -28,5 +28,6 @@ installation:
 * try adding those to $PATH if it doesn't work or cd to C:/Tools when running gem install
 
 ubuntu:
+* sudo apt install libffi-dev zlib1g-dev libssl-dev libyaml-dev
 * make sure libssl-dev is installed before installing puma or it won't support TLS.
 * if puma is already installed, then `gem uninstall puma` `sudo apt install libssl-dev -yq` `bundle install`
